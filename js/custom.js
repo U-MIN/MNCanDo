@@ -34,18 +34,13 @@ window.addEventListener("scroll",()=>{
         innerBox.style.paddingTop = 0+'px';
         innerBox.style.paddingBottom = 0+'px';
         innerBox.style.opacity = 0;
-        loadPage.style.display = none;   
-
     }
     else if(scTop >= contBox[2].offsetTop && scTop < contBox[3].offsetTop){
         menuWrap.style.left = 4+"%";
         menuBtn[2].classList.add("on");
         innerBox.style.paddingTop = 0+'px';
         innerBox.style.paddingBottom = 0+'px';
-        innerBox.style.opacity = 0;   
-        loadPage.style.display = none;   
-
-           
+        innerBox.style.opacity = 0;             
     }
     else if(scTop >= contBox[3].offsetTop && scTop < contBox[4].offsetTop){
         menuWrap.style.left = 4+"%";
@@ -53,8 +48,6 @@ window.addEventListener("scroll",()=>{
         innerBox.style.paddingTop = 0+'px';
         innerBox.style.paddingBottom = 0+'px';
         innerBox.style.opacity = 0;
-        loadPage.style.display = none;      
-
     }
     else if(scTop >= contBox[4].offsetTop ){
         menuWrap.style.left = 4+"%";
@@ -62,10 +55,6 @@ window.addEventListener("scroll",()=>{
         innerBox.style.paddingTop = 50+'px';
         innerBox.style.paddingBottom = 50+'px';
         innerBox.style.opacity = 1;
-        loadPage.style.display = none;   
-
-
-
     }  
 
 });
