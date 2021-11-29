@@ -3,6 +3,7 @@ const menuWrap = document.querySelector("#menu")
 const menuBtn = document.querySelectorAll("#menu > .menu-wrap > li")
 const contBox = document.querySelectorAll("#container > div");          //중간영역
 const innerBox = document.querySelector(".inner .inner-box");
+const loadPage = document.querySelector("#load");
 
 
 let movePoint = 0;      //휠 했을 때 이전, 이후구역 시작 위치값 받아줄 변수
@@ -32,7 +33,8 @@ window.addEventListener("scroll",()=>{
         menuBtn[1].classList.add("on");
         innerBox.style.paddingTop = 0+'px';
         innerBox.style.paddingBottom = 0+'px';
-        innerBox.style.opacity = 0;   
+        innerBox.style.opacity = 0;
+        loadPage.style.display = none;   
 
     }
     else if(scTop >= contBox[2].offsetTop && scTop < contBox[3].offsetTop){
@@ -40,7 +42,8 @@ window.addEventListener("scroll",()=>{
         menuBtn[2].classList.add("on");
         innerBox.style.paddingTop = 0+'px';
         innerBox.style.paddingBottom = 0+'px';
-        innerBox.style.opacity = 0;    
+        innerBox.style.opacity = 0;   
+        loadPage.style.display = none;   
 
            
     }
@@ -49,7 +52,8 @@ window.addEventListener("scroll",()=>{
         menuBtn[3].classList.add("on");
         innerBox.style.paddingTop = 0+'px';
         innerBox.style.paddingBottom = 0+'px';
-        innerBox.style.opacity = 0;   
+        innerBox.style.opacity = 0;
+        loadPage.style.display = none;      
 
     }
     else if(scTop >= contBox[4].offsetTop ){
@@ -58,6 +62,7 @@ window.addEventListener("scroll",()=>{
         innerBox.style.paddingTop = 50+'px';
         innerBox.style.paddingBottom = 50+'px';
         innerBox.style.opacity = 1;
+        loadPage.style.display = none;   
 
 
 

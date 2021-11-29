@@ -14,16 +14,21 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style-2nd.css">
     <!-- js -->
+    <script src="js/jquery-3.6.0.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script defer src="js/custom.js"></script>
+    <script src="js/load.js"></script>
 </head>
 <body>
-    <div id="loading">
-        <div class="load_img"></div>
-        <div class="load_text">
-            <p>MN CAN DO 로딩중</p>
-            <p>……</p>
-            <p></p>
+    <div id="load">
+        <div class="load-wrap">
+            <div class="load-img">
+                <img src="images/logo1.png">
+            </div>
+            <div class="load-text">
+                <p class="load-text1">MN CAN Do로 로딩중</p>
+                <p class="load-text2">반갑습니다 :D</p>
+            </div>
         </div>
     </div>
     <div id="container">
@@ -104,7 +109,7 @@
             <div class="p-right"></div>
             <div class="p-main">
                 <div class="p-main-top">
-                    <div class="p-main-box" data-aos="fade-down" data-aos-duration="800" data-aos-delay="400">
+                    <div class="p-main-box" data-aos="fade-down" data-aos-duration="800" data-aos-delay="500">
                         <a href="https://u-min.github.io/yuu/" target="_black">
                             <div class="p-main-box-img">
                                 <img src="images/mockup1.png">
@@ -129,7 +134,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="p-main-box" data-aos="fade-down" data-aos-duration="800" data-aos-delay="800">
+                    <div class="p-main-box" data-aos="fade-down" data-aos-duration="800" data-aos-delay="1000">
                         <a href="http://ptb1004.dothome.co.kr/jmall/" target="_black">
                             <div class="p-main-box-img">
                                 <img src="images/mockup2.png">
@@ -156,7 +161,7 @@
                     </div>
                 </div>
                 <div class="p-main-bot">
-                    <div class="p-sub" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
+                    <div class="p-sub" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
                         <div class="p-sub-box">
                             <div class="p-sub-box-top">
                                 <div class="p-sub-img-wrap">
@@ -184,7 +189,7 @@
                         </div>
 
                     </div>
-                    <div class="p-sub" data-aos="fade-up" data-aos-duration="800" data-aos-delay="600">
+                    <div class="p-sub" data-aos="fade-up" data-aos-duration="800" data-aos-delay="800">
                         <div class="p-sub-box">
                             <div class="p-sub-box-top">
                                 <div class="p-sub-img-wrap">
@@ -211,7 +216,7 @@
                         </div>
 
                     </div>
-                    <div class="p-sub" data-aos="fade-up" data-aos-duration="600" data-aos-delay="900">
+                    <div class="p-sub" data-aos="fade-up" data-aos-duration="600" data-aos-delay="1200">
                         <div class="p-sub-box">
                             <div class="p-sub-box-top">
                                 <div class="p-sub-img-wrap">
@@ -350,6 +355,9 @@
     </div>
     <script>
         AOS.init();
+        $(window).load(function() {
+        $('#load').fadeOut();
+    });
       </script>
 </body>
 </html>
