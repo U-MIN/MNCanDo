@@ -1,0 +1,24 @@
+ /*reset css*/
+ @font-face {
+   font-family: 'KOTRA_BOLD-Bold';
+   src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.1/KOTRA_BOLD-Bold.woff') format('woff');
+   font-weight: normal;
+   font-style: normal;
+}
+@font-face {
+   font-family: 'KOTRA_GOTHIC';
+   src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.0/KOTRA_GOTHIC.woff') format('woff');
+   font-weight: normal;
+   font-style: normal;
+}
+
+ /*글씨체 설정 및 태그가 가지고 있는 기본 css 속성들을 초기화 합니다*/
+ * { margin:0; padding:0; box-sizing: border-box;}
+ ul,ol,li { list-style:none;}
+ a { text-decoration:none;}
+ img,video { vertical-align:top;}
+ table { border-collapse:collapse;}
+ body { 
+   font-family: 'KOTRA_GOTHIC';
+   line-height:1; font-size:13px; overflow-x: hidden; text-overflow: ellipsis;}
+ .clear_fix:after { content:""; display:block; clear:both;}
