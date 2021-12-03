@@ -3,10 +3,9 @@ const menuWrap = document.querySelector("#menu")
 const menuBtn = document.querySelectorAll("#menu > .menu-wrap > li")
 const contBox = document.querySelectorAll("#container > div");          //중간영역
 const innerBox = document.querySelector(".inner .inner-box");
-const loadPage = document.querySelector("#load");
-
 
 let movePoint = 0;      //휠 했을 때 이전, 이후구역 시작 위치값 받아줄 변수
+
 
 //웹브라우저에 스크롤 이벤트
 window.addEventListener("scroll",()=>{
@@ -89,26 +88,6 @@ moreBtn.addEventListener("click",(e)=>{
     });
 
 });
-
-
-
-// for(let i =0; i <sideBtn.length; i++){
-
-//     sideBtn[i].addEventListener("click",(e)=>{
-
-//         e.preventDefault();         //a태그 기본 기능 멈춤
-
-//         //동그라미 클릭한 순번과 매칭되는 중간구역의 시작 위치값
-//         let secOffset = contBox[i].offsetTop            //
-
-//         //스크롤바 이동
-//         window.scrollTo({
-//             top:secOffset,
-//             left:0,
-//             behavior:"smooth"
-//         });
-//     });
-// }
 
 
 //중간구역에서 휠 했을 때 버튼도 바뀌는 이벤트

@@ -19,6 +19,7 @@
  img,video { vertical-align:top;}
  table { border-collapse:collapse;}
  body { 
+   height:100vh;
    font-family: 'KOTRA_GOTHIC';
    line-height:1; font-size:13px; overflow-x: hidden; text-overflow: ellipsis;}
  .clear_fix:after { content:""; display:block; clear:both;}

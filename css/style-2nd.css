@@ -9,6 +9,7 @@
     background: white;
     z-index: 5;
     text-align: center;
+    transition:all 0.7s;
 }
 
 #load .load-wrap {
@@ -88,7 +89,8 @@
 /* start */
 #start { 
     height:100vh; position: relative; overflow: hidden;
-    animation: start 5s forwards;
+    animation: start 3s forwards;
+    animation-delay: 6.8s;
     width: 100%;
     top: 0; left: 0;
     opacity: 0;
@@ -170,6 +172,7 @@
     left:50%; top:40%; transform: translateX(-50%); 
     animation: minih2; 
     animation-duration: 2s;
+    animation-delay: 7.2s;
     z-index: 4;
 }
 @keyframes minih2 {
@@ -184,43 +187,50 @@
 
 .banner h2:before, .banner h2:after {
     content: ""; display: block;
-    transition: width 0.85s ease;
-    transition-delay: 0.25s;
+    transition: width 1s ease;
+    transition-delay: 7.2s;
     background: #fff;
     height: 4px;
     position: absolute;
     width: 100%;
     z-index: 4;
+    opacity: 1;
 }
 
 .banner h2:before {
     top: -20px;
     left: 0;
     animation: line-left;
+    animation-delay: 7.2s;
     animation-duration: 2s;
 }
 @keyframes line-left {
     0% {
         width: 0%;
+        opacity: 0;
     }
 
     100% {
         width: 100%;
+        opacity: 1;
     }
 }
 .banner h2:after {
     bottom: -20px;
     right: 0;
     animation: line-right;
+    animation-delay: 7.2s;
     animation-duration: 2s;
 }
 @keyframes line-right {
     0% {
         width: 0%;
+        opacity: 0;
     }
 
     100% {
         width: 100%;
+        opacity: 1;
     }
 }
 
